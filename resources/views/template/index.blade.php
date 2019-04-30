@@ -4,7 +4,7 @@
     @include('template.metadata')
     <title>Document</title>
     @include('template.style')
-    @yield('additional-style')
+    @yield('additional-styles')
 </head>
 <body>
     @include('template.navbar')
@@ -29,5 +29,5 @@
     });
 </script>
 
-    @yield('additional-script')
+    @yield('additional-scripts')
 </html>

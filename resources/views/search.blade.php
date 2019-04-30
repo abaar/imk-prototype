@@ -7,5 +7,15 @@
  ashdjalshdjlashjda
  sdhjalhdjlashdljkshadljas
  dasjldhjashdjlsahd
- 
+
+@endsection
+
+@section('additional-styles')
+    <style>
+    </style>
+@endsection
+
+@section('additional-scripts')
+    <script>
+    </script>
 @endsection
