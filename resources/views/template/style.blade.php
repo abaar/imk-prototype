@@ -4,9 +4,14 @@
     
 <!-- Custom styles for this template -->
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-<link href="{{ asset('css/style-responsive.css"') }}" rel="stylesheet">
+<link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet">
 
 <style>
+
+    body{
+        background-color: #4a505f;
+    }
+
     .black-bg{
         background-color:#333844;
         border-bottom: #333844;
@@ -14,6 +19,7 @@
 
     #sidebar{
         background-color: #4a505f;
+        margin-left:-210px;
     }
 
     ul.sidebar-menu li a:hover{
@@ -40,5 +46,20 @@
     #search-input::placeholder{
         color:white;
     }
-    
+    .wrapper{
+        background-color:#4a505f;
+    }
+
+    .overlay{
+        position: fixed; /* Sit on top of the page content */
+        display:none;
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 60px; 
+        left: 210px;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.2); /* Black background with opacity */
+        z-index: 2;
+    }
 </style>

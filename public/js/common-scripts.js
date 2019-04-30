@@ -49,24 +49,26 @@ var Script = function () {
     });
 
     $('.fa-bars').click(function () {
-        if ($('#sidebar > ul').is(":visible") === true) {
+        if ($('#sidebar > ul').hasClass("hidden") === false) {
             $('#main-content').css({
                 'margin-left': '0px'
             });
             $('#sidebar').css({
                 'margin-left': '-210px'
             });
-            $('#sidebar > ul').hide();
+            $('#sidebar > ul').addClass("hidden")
             $("#container").addClass("sidebar-closed");
+            $(".overlay").css("display","none");
         } else {
             $('#main-content').css({
                 'margin-left': '210px'
             });
-            $('#sidebar > ul').show();
+            $('#sidebar > ul').removeClass("hidden");
             $('#sidebar').css({
                 'margin-left': '0'
             });
             $("#container").removeClass("sidebar-closed");
+            $(".overlay").css("display","unset");
         }
     });
 

@@ -4,15 +4,30 @@
     @include('template.metadata')
     <title>Document</title>
     @include('template.style')
+    @yield('additional-style')
 </head>
 <body>
     @include('template.navbar')
     @include('template.sidebar')
     <section id="main-content">
-        <section class="wrapper site-min-height">
-            @section('main')
-      </section><!-- /wrapper -->
+        <div class="overlay">
+        </div>
+        <section class="wrapper site-min-height"> 
+            @yield('main')
+        </section><!-- /wrapper -->
     </section><!-- /MAIN CONTENT -->
 </body>
     @include('template.javascript')
+    
+<script>
+    $(document).ready(function(){
+        $('#main-content').css({
+                'margin-left': '0px'
+            });
+        $('#sidebar > ul').addClass("hidden");
+        $("#container").addClass("sidebar-closed");
+    });
+</script>
+
+    @yield('additional-script')
 </html>
