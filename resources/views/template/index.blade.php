@@ -27,6 +27,11 @@
         $('#sidebar > ul').addClass("hidden");
         $("#container").addClass("sidebar-closed");
     });
+
+    function redirect(to){
+        alert(to);
+        location.href=to;
+    }
 </script>
 
     @yield('additional-scripts')

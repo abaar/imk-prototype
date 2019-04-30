@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/','dashboard')->name('dashboard');
 
-Route::get('/', function () {
-    return view('search');
-});
+Route::view('/search','search')->name('search');
