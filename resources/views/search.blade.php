@@ -49,9 +49,9 @@
                             <option value="">Ruang luas</option>
                         </select>
                 </div>
-            </div>
-            <div class="filter-footer">
-
+                <div class="content-of-filters row tag" style="margin-top:30px">
+                        <button class="btn col-md-11 btn-filter" >FILTER</button>
+                    </div>
             </div>
         </div>
     </div>
@@ -65,6 +65,17 @@
 
 @section('additional-styles')
     <style>
+        .btn-filter{
+            background-color: #333844;
+            color: white;
+            border: 1px solid #232329;
+        }
+
+        .btn-filter:hover{
+            background-color: #0f1629;
+            color: white;
+            border: 1px solid #232329;            
+        }
 
         .filter-header{
             /* border-bottom: 1px solid white */
