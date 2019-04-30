@@ -5,7 +5,7 @@
 <!-- Custom styles for this template -->
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet">
-
+<link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
 <style>
 
     body{

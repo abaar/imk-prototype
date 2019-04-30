@@ -29,7 +29,7 @@
     });
 
     function redirect(to){
-        alert(to);
+        // alert(to);
         location.href=to;
     }
 </script>
