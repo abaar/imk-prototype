@@ -49,25 +49,100 @@
                 </div>
             </div>
         </div>
-        <div class="posting-container col-md-7 " style="background-color:blue">
+        <div class="posting-container col-md-7 ">
             <div class="posting-nav-container">
-                <div class="posting-nav">
+                <div id="video-nav" class="posting-nav posting-nav-active">
                     Video
                 </div>
-                <div class="posting-nav">
+                <div id="article-nav" class="posting-nav">
                     Article
                 </div>
             </div>
-            <div class="posting-content-nav-container" style="float:right">
+            <div class="posting-content-nav-container" style="float:right; padding:5px; color:white;">
                     <span class="fa fa-trash-o"></span> Delete
             </div>
             <div class="posting-content-container">
                     <div class="posting-content">
-                        <div class="content col-md-4">
-                            <div class="content-header">
-                                <input type="radio">
+                        <div class="content col-md-4 video">
+                            <div class="content-overlay">
+                                <div class="content-overlay-header active">
+                                        How to tidy up your..
+                                        <div class="round">
+                                            <input type="checkbox" id="checkbox" />
+                                            <label for="checkbox"></label>
+                                        </div>
+                                </div>
+
+                                <div class="content-overlay-real hidden">
+                                    <p>2Mins - 192M Views</p>
+                                    <p>Hallo guys, today i want to share how to tidy up your room in 5 mins</p>
+                                    <div class="content-overlay-edit">
+                                        Edit
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="content col-md-4 video">
+                                <div class="content-overlay">
+                                    <div class="content-overlay-header active">
+                                            How to tidy up your..
+                                            <div class="round">
+                                                <input type="checkbox" id="checkbox2" />
+                                                <label for="checkbox2"></label>
+                                            </div>
+                                    </div>
+    
+                                    <div class="content-overlay-real hidden">
+                                        <p>2Mins - 192M Views</p>
+                                        <p>Hallo guys, today i want to share how to tidy up your room in 5 mins</p>
+                                        <div class="content-overlay-edit">
+                                            Edit
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="content col-md-4 video">
+                                <div class="content-overlay">
+                                    <div class="content-overlay-header active">
+                                            How to tidy up your..
+                                            <div class="round">
+                                                <input type="checkbox" id="checkbox3" />
+                                                <label for="checkbox3"></label>
+                                            </div>
+                                    </div>
+    
+                                    <div class="content-overlay-real hidden">
+                                        <p>2Mins - 192M Views</p>
+                                        <p>Hallo guys, today i want to share how to tidy up your room in 5 mins</p>
+                                        <div class="content-overlay-edit">
+                                            Edit
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        <div class="content col-md-4 video">
+                                <div class="content-overlay">
+                                    <div class="content-overlay-header active">
+                                            How to tidy up your..
+                                            <div class="round">
+                                                <input type="checkbox" id="checkbox4" />
+                                                <label for="checkbox4"></label>
+                                            </div>
+                                    </div>
+    
+                                    <div class="content-overlay-real hidden">
+                                        <p>2Mins - 192M Views</p>
+                                        <p>Hallo guys, today i want to share how to tidy up your room in 5 mins</p>
+                                        <div class="content-overlay-edit">
+                                            Edit
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
             </div>
             <div class="posting-content-footer">
@@ -79,22 +154,93 @@
 
 @section('additional-styles')
     <style>
+        .display-none{
+            display:none;
+        }
+
+        .posting-content-nav-container{
+            cursor: pointer;
+        }
+
+        .content-overlay-edit:hover{
+            border:1px solid #333844;
+            color:#333844;
+            background-color: rgba(255, 255, 255, 0.9);
+            cursor: pointer;
+        }
+
+        .content-overlay-edit{
+            bottom:3px;
+            position:absolute;
+            right:3px;
+            border:1px solid white;
+            float:right;
+            padding:3px 20px;
+        }
+
+        .content-overlay-real{
+            padding:3px;
+            height: 80%;
+            background-color:rgba(0,0,0,0.7);
+        }
+
+        .content-overlay-header{
+            padding:3px;
+            height: 20%;
+            background-color:rgba(0,0,0,0.7);
+        }
+
+        .content-overlay{
+            color:white;
+            /* padding:3px; */
+            /* padding-top:1%; */
+            /* background-color:rgba(0,0,0,0.7); */
+            height: 100%;
+        }
+        .content-overlay p{
+            margin:0;
+        }
+
         .content{
             padding:0;
             height:128px;
             background-image: url("{{ asset('img/tidy-house-2.jpg') }}");
             background-size:100%;
+            background-repeat: round;   
+            /* margin-left:0.%; */
+            width: 31%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            cursor: pointer;
         }
-        .content-header{
+        .round{
             float:right;
+            margin-top:3px;
         }
+
+        .content-header{
+            padding:3px;
+            color:white;
+            background-color:rgba(0,0,0,0.7)
+        }
+
+        .posting-content-container{
+            background-color:#3f465d;
+            padding:20px;
+        }
+
         .posting-content{
             margin-top:25px;
+
         }
 
         .posting-nav-container{
             padding:0;
-            background-color:red;
+            background-color:#333844;
+        }
+        .posting-nav:hover{
+            background-color: #1f2638;
+            /* color:unset; */
         }
 
         .posting-nav{
@@ -103,11 +249,20 @@
             padding: 10px 20px;
             /* margin-right: 20px; */
             border-right:1px solid white;
+            background-color:#333844;
+            cursor: pointer;
+            color:white;
+        }
+
+        .posting-nav-active{
+            background-color: #1f2638; 
         }
 
         .posting-container{
             margin-left:5%;
-            margin-top:7vh
+            margin-top:7vh;
+            padding:0;
+            background-color: #3f465d;
         }
 
         .profile-header-background-img{
@@ -215,10 +370,75 @@
             /* text-decoration: underline; */
         }
     </style>
+
+    <style>
+
+        .round {
+        position: relative;
+        }
+
+        .round label {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 12px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 12px;
+        }
+
+        .round label:after {
+        border: 2px solid #fff;
+        border-top: none;
+        border-right: none;
+        content: "";
+        height: 2px;
+        left: 2px;
+        opacity: 0;
+        position: absolute;
+        top: 3px;
+        transform: rotate(-45deg);
+        width: 6px;
+        }
+
+        .round input[type="checkbox"] {
+        visibility: hidden;
+        }
+
+        .round input[type="checkbox"]:checked + label {
+        background-color: grey;
+        border-color:grey;
+        }
+
+        .round input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+        }
+
+    </style>
 @endsection
 
 @section('additional-scripts')
     <script>
+        $("#video-nav").click(function(){
+            $("#article-nav").removeClass("posting-nav-active");
+            $(this).addClass("posting-nav-active");
+        });
+
+        $("#article-nav").click(function(){
+            $("#video-nav").removeClass("posting-nav-active");
+            $(this).addClass("posting-nav-active");
+        });
+
+        $(".content").hover(function(){
+            $(this).children().find(".content-overlay-real").removeClass("hidden");
+        });
+
+        $(".content").mouseleave(function(){
+            $(this).children().find(".content-overlay-real").addClass("hidden");
+        });
+
         $(".profile-photo").hover(function(){
             $(".profile-hover").removeClass("hidden");
         });

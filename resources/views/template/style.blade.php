@@ -22,7 +22,12 @@
         margin-left:-210px;
     }
 
-    ul.sidebar-menu li a:hover{
+    ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus{
+        background-color:#5a6275;
+    }
+
+    
+    ul.sidebar-menu li a.active{
         background-color:#5a6275;
     }
 
