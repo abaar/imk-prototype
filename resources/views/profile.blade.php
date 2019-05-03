@@ -1,5 +1,94 @@
 @extends('template.index')
 @section('main')
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header" style="background-color:unset;color:grey;">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:white">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Change Password</h4>
+        </div>
+        <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-3 control-label">Password</label>
+                          <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputEmail3" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-3 control-label">Re-Password</label>
+                          <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                          </div>
+                        </div>
+                      </form>
+        </div>
+        <div class="modal-footer">
+                <button type="button" class="btn btn-warning dark-theme-warning" data-dismiss="modal">Save changes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header" style="background-color:unset;color:grey;">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:white">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Update Info</h4>
+            </div>
+            <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                              <label for="inputEmail3" class="col-sm-3 control-label">Name</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name" value="Marcel Newman">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">Location</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputPassword3" placeholder="Location" value="Indonesia">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">Instagram</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputPassword3" placeholder="Instagram" value="@marcelnewman">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">Facebook</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputPassword3" placeholder="Facebook" value="Marcel Newman">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-3 control-label">Twitter</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputPassword3" placeholder="Twitter" value="@marcelnewman">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">Intro</label>
+                                <div class="col-sm-9">
+                                    <textarea type="text" class="form-control" id="inputPassword3" placeholder="Your Intro">This channel only discuss about gadget in Indonesia Language</textarea>
+                                </div>
+                            </div>
+                          </form>
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-warning dark-theme-warning" data-dismiss="modal">Save changes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
     <div class="row">
         <div class="col-md-3 col-md-offset-1" >
             <div class="profile-container row">
@@ -17,9 +106,9 @@
                     <div class="profile-header-links" >
 
                         <ul class="profile-links">
-                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">Change Password</a></li>
                         
-                            <li><a href="#">Update Info</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal2">Update Info</a></li>
                         </ul>
 
                     </div>
@@ -29,7 +118,7 @@
                     <div>
                         <div class="profile-content-container">
                             <b>Intro</b>
-                            <p>Channel ini khusus membahas gadget-gadget dalam bahasa Indonesia.</p>
+                            <p>This channel only discuss about gadget in Indonesia Language.</p>
                         </div>
                         <div class="profile-content-container">
                             <b>Name</b>
@@ -154,6 +243,27 @@
 
 @section('additional-styles')
     <style>
+        .dark-theme-warning:hover , .dark-theme-warning:active{
+            background-color:#454858;
+            border-color:#454858
+        }
+
+        .dark-theme-warning{
+            background-color:#1a1c22;
+            border-color:#424346;
+        }
+
+        .form-control{
+            background-color:#484b52;
+            color:white;
+        }
+
+        .modal-content{
+            background-color:#252527;
+            color:white;
+        }
+        
+
         .profile-links li a:hover{
             color:grey;
         }
