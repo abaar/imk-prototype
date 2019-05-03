@@ -154,6 +154,10 @@
 
 @section('additional-styles')
     <style>
+        .profile-links li a:hover{
+            color:grey;
+        }
+
         .display-none{
             display:none;
         }
