@@ -7,26 +7,29 @@
               <h5 class="centered">Marcel Newman</h5>
                   
             <li class="mt">
-                <a href="{{ route('profile') }}">
-                    <i class="fa fa-user"></i>
+                <a href="index.html">
+                    <i class="fa fa-dashboard"></i>
                     <span>Profile</span>
                 </a>
             </li>
 
             <li class="sub-menu">
                 <a href="javascript:;" >
-                    <i class="fa fa-plus"></i>
-                    <span>Upload new post</span>
+                    <i class="fa fa-desktop"></i>
+                    <span>Tulis Artikel</span>
                 </a>
-                <ul class="sub">
-                    <li><a  href="general.html">Upload Video</a></li>
-                    <li><a  href="buttons.html">Upload Article</a></li>
-                </ul>
             </li>
 
             <li class="sub-menu">
                 <a href="javascript:;" >
-                    <i class="fa fa-sign-out"></i>
+                    <i class="fa fa-desktop"></i>
+                    <span>Upload Video</span>
+                </a>
+            </li>
+
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-desktop"></i>
                     <span>Logout</span>
                 </a>
             </li>
