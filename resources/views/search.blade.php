@@ -62,7 +62,7 @@
             <div class="col-md-10 content-container" >
                 <div class="col-md-5 content-tumbnail">
                     <div class="content-img-container">
-                        <img src="{{ asset('img/tidy-house-2.jpg') }}" width="100%" max-width="288" height="192">
+                        <img src="{{ asset('img/tidy-house-2.jpg') }}" width="100%" max-width="288" height="178">
                     </div>
                 </div>
                 <div class="col-md-7 content-desc">
@@ -81,7 +81,7 @@
             <div class="col-md-10 content-container" >
                     <div class="col-md-5 content-tumbnail">
                         <div class="content-img-container">
-                            <img src="{{ asset('img/tidy-house.jpg') }}" width="100%" max-width="288" height="192">
+                            <img src="{{ asset('img/tidy-house.jpg') }}" width="100%" max-width="288" height="178">
                         </div>
                     </div>
                     <div class="col-md-7 content-desc">
@@ -100,7 +100,7 @@
                 <div class="col-md-10 content-container" >
                         <div class="col-md-5 content-tumbnail">
                             <div class="content-img-container">
-                                <img src="{{ asset('img/tidy-house-2.jpg') }}" width="100%" max-width="288" height="192">
+                                <img src="{{ asset('img/tidy-house-2.jpg') }}" width="100%" max-width="288" height="178">
                             </div>
                         </div>
                         <div class="col-md-7 content-desc">
@@ -282,6 +282,10 @@
 
         .kotakin{
             border:1px solid white;
+        }
+
+        .content-tumbnail{
+            padding-left:0
         }
 
     </style>

@@ -15,3 +15,7 @@ Route::view('/','dashboard')->name('dashboard');
 Route::view('/search','search')->name('search');
 
 Route::view('/profile','profile')->name('profile');
+
+Route::view('/add/videos','addvideos')->name('addvideos');
+
+Route::view('/add/article','addarticle')->name('addarticle');

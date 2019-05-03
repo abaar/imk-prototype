@@ -19,8 +19,8 @@
                         <span>Upload new post</span>
                     </a>
                     <ul class="sub">
-                        <li><a  href="general.html">Upload Video</a></li>
-                        <li><a  href="buttons.html">Upload Article</a></li>
+                        <li><a  href="{{ Route('addvideos') }}">Upload Video</a></li>
+                        <li><a  href="{{ Route('addarticle') }}">Upload Article</a></li>
                     </ul>
                 </li>
     
