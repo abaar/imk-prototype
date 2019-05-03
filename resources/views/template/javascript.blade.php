@@ -7,3 +7,5 @@
 <script src="{{ asset('js/jquery.nicescroll.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/common-scripts.js') }}"></script>
 <script src="{{ asset('js/select2.min.js') }}"></script>
+<script src="{{ asset('/js/quill.core.js') }}"></script>
+<script src="{{ asset('/js/quill.js') }}"></script>

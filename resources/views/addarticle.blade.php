@@ -1,12 +1,11 @@
 @extends('template.index')
 @section('main')
     <div class="form-container col-md-10 col-md-offset-1">
-        <div class="add-videos col-md-6 col-md-offset-1">
-            <div style="" class="add-videos-container">
-                <span class="fa fa-plus" style="font-size:100px"></span>
-                <p style="font-size:25px">Click or drag your videos here!</p>
-            </div>
+        <div class="col-md-6" style="padding:0;height:60vh;background-color:white;">
+                <div id="editor-container" style="background-color:#6c717f;padding:0;color:white;"    class="col-md-12 col-md-offset-1">
+                    </div>
         </div>
+
         <div class="add-description col-md-4">
             <div class="description-container"> 
                 <form class="form-horizontal" role="form">
@@ -113,5 +112,16 @@
 
 @section('additional-scripts')
     <script>
+        var quill = new Quill('#editor-container', {
+        modules: {
+            toolbar: [
+            [{ header: [1, 2, false] }],
+            ['bold', 'italic', 'underline'],
+            ['image', 'code-block']
+            ]
+        },
+        // placeholder: 'compose something awesome',
+        theme: 'snow'  // or 'bubble'
+        });
     </script>
 @endsection

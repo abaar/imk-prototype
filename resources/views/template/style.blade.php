@@ -6,6 +6,11 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/quill.core.css') }}">
+<link rel="stylesheet" href="{{ asset('css/quill.snow.css') }}">
+<link rel="stylesheet" href="{{ asset('css/quill.bubble.css') }}">
+
+
 <style>
 
     body{
