@@ -19,3 +19,5 @@ Route::view('/profile','profile')->name('profile');
 Route::view('/add/videos','addvideos')->name('addvideos');
 
 Route::view('/add/article','addarticle')->name('addarticle');
+
+Auth::routes();
