@@ -20,4 +20,8 @@ Route::view('/add/videos','addvideos')->name('addvideos');
 
 Route::view('/add/article','addarticle')->name('addarticle');
 
+Route::view('/video','video')->name('video');
+
+
+
 Auth::routes();
