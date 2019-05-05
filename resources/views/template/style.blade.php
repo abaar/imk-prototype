@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="{{ asset('css/quill.bubble.css') }}">
 
 
+
 <style>
 
     body{
