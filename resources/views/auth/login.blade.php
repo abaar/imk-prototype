@@ -24,8 +24,12 @@
     <link rel="stylesheet" type="text/css" href="{{asset('Login_v8/css/util.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('Login_v8/css/main.css')}}">
 <!--===============================================================================================-->
+
+@include('template.style')
+
 </head>
 <body>
+    @include('template.navbar')
     
     <div class="limiter">
         <div class="container-login100"style="background-color:#4d5966;">
@@ -92,6 +96,8 @@
     <script src="{{asset('Login_v8/vendor/countdowntime/countdowntime.js')}}"></script>
 <!--===============================================================================================-->
     <script src="{{asset('Login_v8/js/main.js')}}"></script>
+
+    @include("template.javascript")
 
 </body>
 </html>
