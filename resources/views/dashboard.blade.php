@@ -49,7 +49,7 @@
     }
 
     .container-title {
-        color: black;
+        color: white;
     }
 
     .container-title h1 {
@@ -83,6 +83,7 @@
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
+        cursor: pointer;
     }
 
 
