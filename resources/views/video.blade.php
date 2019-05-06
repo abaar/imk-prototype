@@ -16,7 +16,7 @@
             <form role="form">
                 <div class="form-group">
                     <div class="col-sm-12">
-                    <input type="text" class="form-control" placeholder="Write your comments">
+                    <input type="text" class="form-control white-form" placeholder="Write your comments">
                     <button type="submit" class="btn btn-primary" style="margin-bottom:30px">Submit</button>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
             </div>
             <div class="title-thumbnail col-md-6">
                 <h3>Tidy up your room</h3>
-                <p>BigShaq | 100 views</p>
+                <p>100 views</p>
                 <p>Yep, another filler episode, I guess</p>
             </div>
         </div>
@@ -53,7 +53,7 @@
             </div>
                 <div class="title-thumbnail col-md-6">
                     <h3>Tidy up my room</h3>
-                    <p>BigShaq | 100 views</p>
+                    <p>100 views</p>
                     <p>Yep, another filler episode, I guess</p>
             </div>
         </div>
@@ -67,6 +67,10 @@
 
 @section('additional-styles')
     <style>
+
+    .white-form::placeholder  {
+        color:white
+    }
     .vid-comment-container {
         padding-top:40px;
         padding-bottom:5px;
