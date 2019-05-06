@@ -2,9 +2,9 @@
 @section('main')
 
 <div class="row">
-    <div class="vid-comment-container col-md-8">
+    <div id="first-col" class="vid-comment-container col-md-8">
         <div class="vid-container">
-            <img class="player" src="{{ asset('img/tidy-house-2.jpg') }}" width="1040px",height="585px">
+            <img class="player" src="{{ asset('img/tidy-house-2.jpg') }}" width="800px",height="450px">
         </div>
         <div class="text-container">
             <h1>5 minutes with me</h1>
@@ -22,10 +22,10 @@
                 </div>
         </div>
         <div class="comments-container row">
-            <div class="profile-container col-md-2">
+            <div class="profile-container col-md-2" style="width:13%;padding-right:0">
                 <img src="{{asset('img/profile-02.jpg')}}" style="width:100%; max-width:80px; height:80px; border-radius: 50%;">
             </div>
-            <div class="comment-container col-md-10">
+            <div class="comment-container col-md-10" style="padding-left:0">
                 <div class="comment-profile"><h3>Mr.J</h3></div>
                 <p>This video is good</p>
 
@@ -33,14 +33,14 @@
             
         </div>
     </div>
-    <div class="vid-comment-container col-md-4">
+    <div id="second-col" class="vid-comment-container col-md-4">
         <h1>Recommendation</h1>
 
         <div class="vid-thumbnail row">
-            <div class="col-md-6">
+            <div class="col-md-5">
             <img src="{{asset('img/tidy-house.jpg')}}">
             </div>
-            <div class="title-thumbnail col-md-6">
+            <div class="title-thumbnail col-md-7">
                 <h3>Tidy up your room</h3>
                 <p>100 views</p>
                 <p>Yep, another filler episode, I guess</p>
@@ -48,10 +48,10 @@
         </div>
 
         <div class="vid-thumbnail row">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <img src="{{asset('img/tidy-house-2.jpg')}}">
             </div>
-                <div class="title-thumbnail col-md-6">
+                <div class="title-thumbnail col-md-7">
                     <h3>Tidy up my room</h3>
                     <p>100 views</p>
                     <p>Yep, another filler episode, I guess</p>
@@ -72,12 +72,15 @@
         color:white
     }
     .vid-comment-container {
-        padding-top:40px;
+        margin-top:40px;
         padding-bottom:5px;
         padding-left:40px;
         padding-right:40px;
         margin-left:0;
         color: white;
+    }
+    #second-col {
+        border-left: 1px solid white;
     }
     .vid-container{
         padding-bottom: 10px;
@@ -139,8 +142,8 @@
 
     .vid-thumbnail img {
         width: 100%;
-        height: 150px;
-        max-width: 300px; 
+        height: 100px;
+        max-width: 200px; 
         border-radius: 10px;
     }
     </style>
