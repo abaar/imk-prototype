@@ -35,6 +35,30 @@
     </div>
     <div class="vid-comment-container col-md-4">
         <h1>Recommendation</h1>
+
+        <div class="vid-thumbnail row">
+            <div class="col-md-6">
+            <img src="{{asset('img/tidy-house.jpg')}}">
+            </div>
+            <div class="title-thumbnail col-md-6">
+                <h3>Tidy up your room</h3>
+                <p>BigShaq | 100 views</p>
+                <p>Yep, another filler episode, I guess</p>
+            </div>
+        </div>
+
+        <div class="vid-thumbnail row">
+            <div class="col-md-6">
+                <img src="{{asset('img/tidy-house-2.jpg')}}">
+            </div>
+                <div class="title-thumbnail col-md-6">
+                    <h3>Tidy up my room</h3>
+                    <p>BigShaq | 100 views</p>
+                    <p>Yep, another filler episode, I guess</p>
+            </div>
+        </div>
+        
+
     </div>
 </div>
 
@@ -49,6 +73,7 @@
         padding-left:40px;
         padding-right:40px;
         margin-left:0;
+        color: white;
     }
     .vid-container{
         padding-bottom: 10px;
@@ -99,6 +124,20 @@
     .comment-container p {
         font-size: 18px;
         color: white;
+    }
+
+    .vid-thumbnail {
+        padding-top:5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom:5px;
+    }
+
+    .vid-thumbnail img {
+        width: 100%;
+        height: 150px;
+        max-width: 300px; 
+        border-radius: 10px;
     }
     </style>
 @endsection

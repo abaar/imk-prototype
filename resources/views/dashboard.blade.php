@@ -6,10 +6,10 @@
             <div class="container-title">
                 <h3>Welcome To</h3>
 
-                <h1>Tidiup</h1>
-                <div class="second-title"><h3>Hahahahahaha</h3></div>
+                <h1>Tydyiup</h1>
+                <div class="second-title"><h3>a greatplace to tidy up your room!</h3></div>
 
-                <div class="text-list-images"><h3>Ini gan</h3></div>
+                <div class="text-list-images"><h3>Here is some tips for you <3 </h3></div>
             </div>
             <div class="container-image">
                 <div class="container-image-row">
@@ -32,7 +32,7 @@
                 <img class="img" src="{{asset('img/tidy-house.jpg')}}" style="width:100%; max-height:375px; height:100%">
             </div>
             <div class="container-title">
-                <h2>Hohohihi</h2>
+                <h2>Introduction to Tydyiup</h2>
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
     <style>
     .container-homepage {
         padding-left: 40px;
-        padding-top: 60px;
+        margin-top: 100px;
         padding-right: 40px;
     }
 
