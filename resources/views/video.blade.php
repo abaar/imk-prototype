@@ -17,9 +17,20 @@
                 <div class="form-group">
                     <div class="col-sm-12">
                     <input type="text" class="form-control" placeholder="Write your comments">
-                    <button type="submit" class="btn btn-default" stype="padding-top:100p">Submit</button>
+                    <button type="submit" class="btn btn-primary" style="margin-bottom:30px">Submit</button>
                     </div>
                 </div>
+        </div>
+        <div class="comments-container row">
+            <div class="profile-container col-md-2">
+                <img src="{{asset('img/profile-02.jpg')}}" style="width:100%; max-width:80px; height:80px; border-radius: 50%;">
+            </div>
+            <div class="comment-container col-md-10">
+                <div class="comment-profile"><h3>Mr.J</h3></div>
+                <p>This video is good</p>
+
+            </div>
+            
         </div>
     </div>
     <div class="vid-comment-container col-md-4">
@@ -48,13 +59,15 @@
     .text-container {
         color: white;
         padding: 0;
+        margin-bottom: 10px;
     }
     .text-container p {
         font-size: 18px;
     }
     .form-comment-container {
-        padding-top: 10px;
+        margin-top: 10px;
         padding-left: 0;
+        margin-bottom: 10px;
     }
 
     .label-comment {
@@ -66,8 +79,27 @@
         margin-bottom: 20px;
         border-bottom: 1px solid black;
         font-size: 18px;
+    }
+    
+    ::placeholder {
+        color: green;
+    }
+
+    input:focus {
         color: white;
-    } 
+    }
+
+    .comments-container {
+        margin-top: 100px;
+    }
+    .comment-container h3 {
+        color: white;
+        font-weight: bold;
+    }
+    .comment-container p {
+        font-size: 18px;
+        color: white;
+    }
     </style>
 @endsection
 
