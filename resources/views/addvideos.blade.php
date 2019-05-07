@@ -10,6 +10,9 @@
         <div class="add-description col-md-4">
             <div class="description-container"> 
                 <form class="form-horizontal" role="form">
+                        <div class="col-md-12 alert alert-danger">
+                            Unsupported video format
+                        </div>
                         <div class="form-group">
                           <div class="col-sm-12">
                             <input type="text" class="form-control" id="inputEmail3" placeholder="Title">
@@ -22,7 +25,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="Name" id="#Tags">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="#Tags" id="#Tags">
                             </div>
                         </div>
                         <div class="form-group">

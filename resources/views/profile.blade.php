@@ -11,13 +11,13 @@
         <div class="modal-body">
                 <form class="form-horizontal" role="form">
                         <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-3 control-label">Password</label>
+                          <label for="inputEmail3" class="col-sm-3 control-label required">Password</label>
                           <div class="col-sm-9">
                             <input type="password" class="form-control" id="inputEmail3" placeholder="Password">
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="inputPassword3" class="col-sm-3 control-label">Re-Password</label>
+                          <label for="inputPassword3" class="col-sm-3 control-label required">Re-Password</label>
                           <div class="col-sm-9">
                             <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                           </div>
@@ -32,6 +32,23 @@
     </div>
 </div>
 
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header" style="background-color:unset;color:grey;">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:white">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+                Are you sure want to delete these post? It will be deleted permanently , and you can't get it back.
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-warning dark-theme-warning" data-dismiss="modal">Delete</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -43,13 +60,13 @@
             <div class="modal-body">
                     <form class="form-horizontal" role="form">
                             <div class="form-group">
-                              <label for="inputEmail3" class="col-sm-3 control-label">Name</label>
+                              <label for="inputEmail3" class="col-sm-3 control-label required">Name</label>
                               <div class="col-sm-9">
                                 <input type="text" class="form-control" id="inputEmail3" placeholder="Name" value="Marcel Newman">
                               </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-3 control-label">Location</label>
+                                <label for="inputPassword3" class="col-sm-3 control-label required">Location</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control" id="inputPassword3" placeholder="Location" value="Indonesia">
                                 </div>
@@ -147,11 +164,14 @@
                     Article
                 </div>
             </div>
-            <div class="posting-content-nav-container" style="float:right; padding:5px; color:white;">
+            <div class="posting-content-nav-container" style="float:right; padding:5px; color:white;" data-toggle="modal" data-target="#myModal3">
                     <span class="fa fa-trash-o"></span> Delete
             </div>
             <div class="posting-content-container">
                     <div class="posting-content">
+                        <div class="col-md-12 alert alert-warning">
+                            Your post have been deleted.
+                        </div>
                         <div class="content col-md-4 video">
                             <div class="content-overlay">
                                 <div class="content-overlay-header active">
@@ -243,6 +263,14 @@
 
 @section('additional-styles')
     <style>
+        .required{
+            color:white;
+        }
+
+        .required::after{
+            content:"*"
+        }
+
         .dark-theme-warning:hover , .dark-theme-warning:active{
             background-color:#454858;
             border-color:#454858

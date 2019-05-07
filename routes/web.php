@@ -22,7 +22,8 @@ Route::view('/add/article','addarticle')->name('addarticle');
 
 Route::view('/video','video')->name('video');
 
-Auth::routes();
+Route::view('/register','register')->name('register');
 
+Route::view('/articles','articles')->name('article');
 
 Route::view('/login','login')->name('login');

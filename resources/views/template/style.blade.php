@@ -73,4 +73,8 @@
         background-color: rgba(0,0,0,0.2); /* Black background with opacity */
         z-index: 2;
     }
+
+    .site-min-height{
+        min-height: 100vh;
+    }
 </style>

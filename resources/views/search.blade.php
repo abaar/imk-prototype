@@ -80,25 +80,27 @@
                     </div>
                 </div>
             </a>
+            <a href="{{ route('article') }}">
             <div class="col-md-10 content-container" >
-                    <div class="col-md-5 content-tumbnail">
-                        <div class="content-img-container">
-                            <img src="{{ asset('img/tidy-house.jpg') }}" width="100%" max-width="288" height="178">
-                        </div>
-                    </div>
-                    <div class="col-md-7 content-desc">
-                        <div class="content-desc-container col-md-12">
-                            <div class="content-desc-title">
-                                <p class="content-type"><b>ARTICLE</b></p>
-                                <h3>How to tidy up your bedroom in 5 mins</h3>
-                                <p class="content-date">1M Clicks - 3 Days Ago</p>
-                            </div>
-                            <div class="content-description">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...
-                            </div>  
-                        </div>
+                <div class="col-md-5 content-tumbnail">
+                    <div class="content-img-container">
+                        <img src="{{ asset('img/tidy-house.jpg') }}" width="100%" max-width="288" height="178">
                     </div>
                 </div>
+                <div class="col-md-7 content-desc">
+                    <div class="content-desc-container col-md-12">
+                        <div class="content-desc-title">
+                            <p class="content-type"><b>ARTICLE</b></p>
+                            <h3>How to tidy up your bedroom in 5 mins</h3>
+                            <p class="content-date">1M Clicks - 3 Days Ago</p>
+                        </div>
+                        <div class="content-description">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim...
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            </a>
                 <div class="col-md-10 content-container" >
                         <div class="col-md-5 content-tumbnail">
                             <div class="content-img-container">

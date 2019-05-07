@@ -16,6 +16,7 @@
             @yield('main')
         </section><!-- /wrapper -->
     </section><!-- /MAIN CONTENT -->
+    @include('template.footer')
 </body>
     @include('template.javascript')
     
