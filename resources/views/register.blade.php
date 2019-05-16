@@ -9,7 +9,7 @@
                 <div class="col-md-12 alert alert-danger">
                         Email has been taken
                     </div>
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="{{route('dashboard')}}">
                     <div class="form-group">
                         <div class="col-sm-12">
                             <input type="password" class="form-control" id="inputEmail3" placeholder="Email">

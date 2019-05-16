@@ -25,7 +25,7 @@
                 </li>
     
                 <li class="sub-menu">
-                    <a href="javascript:;" >
+                    <a href="{{ Route('dashboard') }}" >
                         <i class="fa fa-sign-out"></i>
                         <span>Logout</span>
                     </a>

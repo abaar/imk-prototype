@@ -5,7 +5,7 @@
             <h3>Login</h3>
         </div>
         <div class="col-md-12">
-            <form class="form-horizontal">
+            <form class="form-horizontal"  action="{{route('dashboard')}}">
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
                         <div class="col-sm-9">
@@ -30,7 +30,7 @@
                                 </div>
                             </div>   
                     </div>
-                    <button class="btn btn-primary col-md-8 col-md-offset-2">Login</button>
+                <button class="btn btn-primary col-md-8 col-md-offset-2">Login</button>
            
             </form>
         </div>
